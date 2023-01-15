@@ -5,7 +5,10 @@
   </head>
   <body>
     <script>
-      document.body.style.backgroundColor = ((Math.sin(millis()) * 255) + 255).toString(16);
+      function trippyBG() {
+        document.body.style.backgroundColor = ((Math.sin(millis()) * 255) + 255).toString(16);
+      }
+      window.setInterval(trippyBG, 1);
     </script>
     <p>
       pwivacy UwU
