@@ -2,8 +2,8 @@
 
 <script>
   function trippyBG() {
-    document.body.style.backgroundColor = 'rgb(' + Math.sin(Date.now()) * 255 + ',' + Math.sin(Date.now()) * 255 + ',' + Math.sin(Date.now()) * 255 + ')';
+    document.body.style.backgroundColor = 'rgb(' + Math.sin(Date.now()) * 255 + ',' + Math.cos(Date.now()) * 255 + ',' + Math.sin(Date.now()) * 255 + ')';
   }
-  window.setInterval(trippyBG, 1);
+  window.setInterval(trippyBG, 10);
 </script>
 
