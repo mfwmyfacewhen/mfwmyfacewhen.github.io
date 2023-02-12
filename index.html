@@ -44,18 +44,12 @@
             document.write("<h1> You are running " + finalBrowser + " on " + finalOs + "</h1>");
         }
         osbrowserfunction();
-        //let x = document.cookie;
-        //if (x == "pingas") {
-        //    document.write("<h1> Welcome back </h1>");
-        //}
-        //document.cookie = "pingas; secure";
         let x = localStorage.getItem("visited");
         if (x == "true") {
             document.write("<h1>Welcome back</h1>");
         }
-        //console.log(localStorage.getItem("visited"))
         localStorage.setItem("visited", "true");
-
+        document.write("<h1> You are located at " + Geolocation.getCurrentPosition() + "</h1>";
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
