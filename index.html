@@ -3,9 +3,10 @@
       function getIP(json) {
         document.write("<h1> Your public IP address is " + json.ip + "</h1>");
       }
-      function osfunction () {
+      function osbrowserfunction () {
             let os = navigator.userAgent;
             let finalOs = "";
+            let finalBrowser = "";
             if (os.search('Windows')!==-1){
                 finalOs="Windows";
             }
@@ -21,9 +22,27 @@
             else if (os.search('Linux')!==-1 && os.search('X11')!==-1){
                 finalOs="Linux"
             }
-            document.write("<h1> You are running " + finalOs + "</h1>");
+            if (os.search('Safari')!==-1{
+                finalBrowser="Safari";
+            }
+            else if (os.search('Chrome')!==-1{
+                 finalBrowser="Chrome";
+             }
+            else if (os.search('Brave')!==-1{
+                 finalBrowser="Brave";
+             }
+            else if (os.search('Firefox')!==-1{
+                 finalBrowser="Firefox";
+             }
+            else if (os.search('Edge')!==-1{
+                 finalBrowser="Edge";
+             }
+            else if (os.search('Opera')!==-1{
+                 finalBrowser="Opera";
+             }
+            document.write("<h1> You are running " + finalBrowser + " on " + finalOs + "</h1>");
         }
-        osfunction();
+        osbrowserfunction();
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
