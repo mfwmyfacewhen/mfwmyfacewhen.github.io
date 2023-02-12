@@ -49,7 +49,6 @@
             document.write("<h1>Welcome back</h1>");
         }
         localStorage.setItem("visited", "true");
-        var nav;
         navigator.geolocation.getCurrentPosition((nav) => document.write("<h1> You are located at " + nav.coords.latitude + ", " + nav.coords.longitude + "</h1>"));
         //document.write("<h1> You are located at " + nav.coords.latitude + ", " + nav.coords.longitude + "</h1>");
 
