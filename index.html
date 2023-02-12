@@ -1,7 +1,7 @@
 <head>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP">
       function getIP(json) {
-        document.write("<h1> My public IP address is: " + json.ip + "</h1>");
+        document.write("<h1> Your public IP address is " + json.ip + "</h1>");
       }
       function osfunction () {
             let os = navigator.userAgent;
@@ -19,7 +19,7 @@
                 finalOs="Linux"
             }
 
-            document.write("<h1> You are running " + finalOs + ".</h1>");
+            document.write("<h1> You are running " + finalOs + "</h1>");
 
         }
         osfunction();
