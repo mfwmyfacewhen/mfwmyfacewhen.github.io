@@ -7,9 +7,7 @@
             let ua = navigator.userAgent;
             let finalOs = "";
             let finalBrowser = "";
-            if (navigator.brave !== undefined){
-                browser = "Brave"
-            }
+
             if (ua.includes('Windows')){
                 finalOs="Windows";
             }
@@ -27,6 +25,9 @@
             }
             if (ua.includes('OPR')){
                 finalBrowser="Opera";
+            }
+            else if (navigator.brave !== undefined){
+                finalBrowser = "Brave"
             }
             else if (ua.includes('Firefox')){
                  finalBrowser="Firefox";
