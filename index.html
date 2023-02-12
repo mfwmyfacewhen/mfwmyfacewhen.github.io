@@ -49,10 +49,11 @@
         //    document.write("<h1> Welcome back </h1>");
         //}
         //document.cookie = "pingas; secure";
-        localStorage.setItem("visited", true)
+        
         if (localStorage.getItem("visited") == true) {
-            document.write("<h1>Welcome back</h1>")
+            document.write("<h1>Welcome back</h1>");
         }
+        localStorage.setItem("visited", true);
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
