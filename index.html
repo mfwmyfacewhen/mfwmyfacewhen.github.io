@@ -3,8 +3,7 @@
       function getIP(json) {
         document.write("<h1> My public IP address is: " + json.ip + "</h1>");
       }
-      function osfunction ()
-        {
+      function osfunction () {
             let os = navigator.userAgent;
             let finalOs="";
             if (os.search('Windows')!==-1){
@@ -23,6 +22,7 @@
             document.write("<h1> You are running " + finalOS + ".</h1>");
 
         }
+        osfunction();
         window.onload = function () {
         var script = document.createElement("script");
         script.type = "text/javascript";
