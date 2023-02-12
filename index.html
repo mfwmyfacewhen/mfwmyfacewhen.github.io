@@ -37,10 +37,12 @@
             else if (ua.includes('Safari')){
                  finalBrowser="Safari";
              }
+            if (navigator.brave !== undefined){
+                browser = "Brave"
+            }
             document.write("<h1> You are running " + finalBrowser + " on " + finalOs + "</h1>");
         }
         osbrowserfunction();
-        console.log(navigator.brave);
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
