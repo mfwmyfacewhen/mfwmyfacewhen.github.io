@@ -25,7 +25,7 @@
             if (ua.includes('OPR')){
                 finalBrowser="Opera";
             }
-            else if (navigator.brave && await navigator.brave.isBrave() || false){
+            else if (navigator.brave.isBrave()){
                  finalBrowser="Brave";
              }
             else if (ua.includes('Firefox')){
