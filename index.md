@@ -1,7 +1,0 @@
-<script>
-  function trippyBG() {
-    document.body.style.backgroundColor = 'rgb(' + (Math.sin(Date.now() / 1000) * 150 + 150) + ',' + (Math.cos(Date.now() / 1000) * 150 + 150) + ',' + 255 + ')';
-  }
-  window.setInterval(trippyBG, 1);
-</script>
-
