@@ -50,7 +50,7 @@
         }
         localStorage.setItem("visited", "true");
         //document.write("<h1> You are located at " + Geolocation.getCurrentPosition() + "</h1>");
-        console.log(Geolocation.getCurrentPosition());
+        console.log(navigator.geolocation.getCurrentPosition());
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
