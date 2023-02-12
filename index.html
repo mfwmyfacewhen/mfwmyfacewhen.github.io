@@ -12,17 +12,16 @@
             else if (os.search('Mac')!==-1){
                 finalOs="MacOS";
             }
+            else if (os.search('CrOS') !==-1){
+                finalOs="ChromeOS"
+            }
             else if (os.search('X11')!==-1 && !(os.search('Linux')!==-1)){
                 finalOs="Linux";
             }
             else if (os.search('Linux')!==-1 && os.search('X11')!==-1){
                 finalOs="Linux"
             }
-            else if (os.search('CrOS') !==-1){
-                finalOs="ChromeOS"
-            }
             document.write("<h1> You are running " + finalOs + "</h1>");
-
         }
         osfunction();
     </script>
