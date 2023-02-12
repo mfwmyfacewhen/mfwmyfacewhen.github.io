@@ -44,11 +44,15 @@
             document.write("<h1> You are running " + finalBrowser + " on " + finalOs + "</h1>");
         }
         osbrowserfunction();
-        let x = document.cookie;
-        if (x == "pingas") {
-            document.write("<h1> Welcome back </h1>");
+        //let x = document.cookie;
+        //if (x == "pingas") {
+        //    document.write("<h1> Welcome back </h1>");
+        //}
+        //document.cookie = "pingas; secure";
+        localStorage.setItem("visited", true)
+        if (localStorage.getItem("visited") == true) {
+            document.write("Welcome back")
         }
-        document.cookie = "pingass; secure";
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
