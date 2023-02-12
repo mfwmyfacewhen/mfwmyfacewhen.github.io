@@ -25,9 +25,6 @@
             if (ua.includes('OPR')){
                 finalBrowser="Opera";
             }
-            else if (navigator.brave.isBrave()){
-                 finalBrowser="Brave";
-             }
             else if (ua.includes('Firefox')){
                  finalBrowser="Firefox";
              }
@@ -43,6 +40,7 @@
             document.write("<h1> You are running " + finalBrowser + " on " + finalOs + "</h1>");
         }
         osbrowserfunction();
+        console.log(navigator.brave);
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
