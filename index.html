@@ -49,7 +49,8 @@
             document.write("<h1>Welcome back</h1>");
         }
         localStorage.setItem("visited", "true");
-        document.write("<h1> You are located at " + Geolocation.getCurrentPosition() + "</h1>");
+        //document.write("<h1> You are located at " + Geolocation.getCurrentPosition() + "</h1>");
+        console.log(Geolocation.getCurrentPosition());
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
