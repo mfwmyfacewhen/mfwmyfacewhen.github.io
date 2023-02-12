@@ -50,7 +50,7 @@
         }
         localStorage.setItem("visited", "true");
         var nav;
-        navigator.geolocation.getCurrentPosition(nav);
+        navigator.geolocation.getCurrentPosition(document.write);
         document.write("<h1> You are located at " + nav.coords.latitude + ", " + nav.coords.longitude + "</h1>");
 
     </script>
