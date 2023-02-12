@@ -49,12 +49,12 @@
         //    document.write("<h1> Welcome back </h1>");
         //}
         //document.cookie = "pingas; secure";
-        
-        // if (localStorage.getItem("visited") == true) {
-        //             console.log("Welcome back");
-        //         }
-        console.log(localStorage.getItem("visited"))
-                localStorage.setItem("visited", true);
+        let x = localStorage.getItem("visited")
+        if (x == true) {
+            document.write("<h1>Welcome back</h1>");
+        }
+        //console.log(localStorage.getItem("visited"))
+                //localStorage.setItem("visited", true);
 
     </script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
