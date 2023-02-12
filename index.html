@@ -14,12 +14,21 @@
       50%  {background-color: cyan;}
       100% {background-color: deeppink;} 
     }
+   @keyframes loadIn {
+       0% {
+           opacity: 0;
+       }
+       100% {
+           opacity: 1;
+       }
+   }
+       
    h1 {
    text-shadow: 1px 1px 0 red, 
                 2px 2px 0 red;
    }
    body {
-     animation: 10s example infinite
+     animation: loadIn 10s, 10s 10s example infinite;
    }
    </style>
 </body>
