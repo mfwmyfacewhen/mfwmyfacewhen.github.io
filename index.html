@@ -72,5 +72,5 @@
    }
    </style>
     <h1 id="location"></h1>
-    <script>document.getElementById("location").innerHTML(`You are located at ${nav.coords.latitude}, ${nav.coords.longitude}`);</script>
+    <script>navigator.geolocation.getCurrentPosition((nav) => document.write("<h1> You are located at " + nav.coords.latitude + ", " + nav.coords.longitude + "</h1>"));</script>
 </body>
