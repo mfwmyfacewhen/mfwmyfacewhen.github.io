@@ -2,7 +2,7 @@
 
 <script>
   function trippyBG() {
-    document.body.style.backgroundColor = 'rgb(' + (Math.sin(Date.now() / 1000) * 255 + 255) + ',' + (Math.cos(Date.now() / 1000) * 255 + 255) + ',' + (Math.cos(Date.now() / 500) * 255 + 255) + ')';
+    document.body.style.backgroundColor = 'rgb(' + (Math.sin(Date.now() / 1000) * 255 + 255) + ',' + (Math.cos(Date.now() / 750) * 255 + 255) + ',' + (Math.cos(Date.now() / 500) * 255 + 255) + ')';
   }
   window.setInterval(trippyBG, 1);
 </script>
