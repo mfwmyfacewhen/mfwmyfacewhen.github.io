@@ -1,0 +1,12 @@
+@keyframes example { 
+  0%   {background-color: deeppink;}
+  50%  {background-color: cyan;}
+  100% {background-color: deeppink;} 
+}
+h1 {
+text-shadow: 1px 1px 0 red, 
+            2px 2px 0 red;
+}
+body {
+  animation: 10s example infinite
+}
