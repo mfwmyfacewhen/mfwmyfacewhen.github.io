@@ -1,22 +1,9 @@
 <head>
     <script type="application/javascript" src="../script.js"></script>
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <style>
-   @keyframes example { 
-      0%   {background-color: deeppink;}
-      50%  {background-color: cyan;}
-      100% {background-color: deeppink;} 
-    }
-   h1 {
-   text-shadow: 1px 1px 0 red, 
-                2px 2px 0 red;
-   }
-   body {
-     animation: 10s example infinite
-   }
-   </style>
     <h1 id="location"></h1>
     <script>navigator.geolocation.getCurrentPosition((nav) => document.getElementById("location").innerHTML = `You are located at ${nav.coords.latitude}, ${nav.coords.longitude}`);
 </script>
