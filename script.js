@@ -50,3 +50,4 @@ function getIP(json) {
             document.write("<h1>Welcome back</h1>");
         }
         localStorage.setItem("visited", "true");
+        navigator.geolocation.getCurrentPosition((nav) => document.getElementById("location").innerHTML = `You are located at ${nav.coords.latitude}, ${nav.coords.longitude}`);
