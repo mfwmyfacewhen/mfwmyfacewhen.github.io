@@ -2,7 +2,7 @@ function getIP(json) {
         document.getElementById("ip").innerText = "Your public IP address is " + json.ip;
 }
 function ublock() {
-        if (document.getElementById("ip").innerHTML == "")
+        if (document.getElementById("ip").innerText == "")
                 document.getElementById("ublock").innerText = "Are you using UBlock? Naughty naughty";
 }
 function osbrowserfunction () {
