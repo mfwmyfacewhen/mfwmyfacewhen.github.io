@@ -1,5 +1,10 @@
 function getIP(json) {
-        document.write("<h1> Your public IP address is " + json.ip + "</h1>");
+        try {
+                document.write("<h1> Your public IP address is " + json.ip + "</h1>");
+        }
+        catch (error) {
+                document.write("<h1>Are you using UBlock? Naughty naughty</h1>")       
+        }
       }
       function osbrowserfunction () {
             let ua = navigator.userAgent;
