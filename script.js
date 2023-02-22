@@ -1,6 +1,6 @@
 function getIP(json) {
         document.getElementById("ip").innerText = "Your public IP address is " + json.ip;
-}(json);
+}
 if (!document.getElementById("ip").innerHTML)
     document.getElementById("ublock").innerText = "Are you using UBlock? Naughty naughty";
 function osbrowserfunction () {
