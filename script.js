@@ -1,9 +1,9 @@
 function getIP(json) {
         document.write("<h1> Your public IP address is " + json.ip + "</h1>");
 }
-if (!document.body.innerText.includes('.')) {
+var text = document.body.innerText;
+if (!text.includes('.'))
         document.write("<h1>Are you using UBlock? Naughty naughty</h1>");
-}
 function osbrowserfunction () {
         let ua = navigator.userAgent;
         let finalOs = "";
