@@ -1,3 +1,4 @@
+console.log(document.getElementById("ip").innerText);
 function getIP(json) {
         document.getElementById("ip").innerText = "Your public IP address is " + json.ip;
 }
