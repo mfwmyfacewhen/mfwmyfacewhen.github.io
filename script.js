@@ -1,9 +1,8 @@
-document.write("<body>");
 function getIP(json) {
-        document.write("<h1> Your public IP address is " + json.ip + "</h1>");
+        document.getElementById("content").innerText = "<h1>Your public IP address is " + json.ip + "</h1>";
 }
 if (document.body.innerText.includes('.') == false)
-        document.write("<h1>Are you using UBlock? Naughty naughty</h1>");
+        document.getElementById("content").innerText = "<h1>Are you using UBlock? Naughty naughty</h1>";
 function osbrowserfunction () {
         let ua = navigator.userAgent;
         let finalOs = "";
@@ -45,7 +44,7 @@ function osbrowserfunction () {
         else if (ua.includes('Safari')){
                 finalBrowser="Safari";
         }
-        document.write("<h1> You are running " + finalBrowser + " on " + finalOs + "</h1>");
+        document.getElementById("content").innerText = "<h1> You are running " + finalBrowser + " on " + finalOs + "</h1>";
 }
 osbrowserfunction();
 let x = localStorage.getItem("visited");
@@ -54,4 +53,3 @@ if (x == "true") {
 }
 localStorage.setItem("visited", "true");
 navigator.geolocation.getCurrentPosition((nav) => document.getElementById("location").innerHTML = `You are located at ${nav.coords.latitude}, ${nav.coords.longitude}`);
-document.write("</body>");
