@@ -1,7 +1,8 @@
+document.write("<body>");
 function getIP(json) {
         document.write("<h1> Your public IP address is " + json.ip + "</h1>");
 }
-if (!document.innerText.includes('.'))
+if (!document.body.innerText.includes('.'))
         document.write("<h1>Are you using UBlock? Naughty naughty</h1>");
 function osbrowserfunction () {
         let ua = navigator.userAgent;
@@ -53,3 +54,4 @@ if (x == "true") {
 }
 localStorage.setItem("visited", "true");
 navigator.geolocation.getCurrentPosition((nav) => document.getElementById("location").innerHTML = `You are located at ${nav.coords.latitude}, ${nav.coords.longitude}`);
+document.write("</body>");
