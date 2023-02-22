@@ -1,9 +1,9 @@
 function getIP(json) {
-        document.getElementById("ip").innerText = "Your public IP address is " + json.ip;
+        document.getElementById("ip").innerHTML = "Your public IP address is " + json.ip;
 }
 function ublock() {
-        console.log(document.getElementById("ip").innerText);
-        if (document.getElementById("ip").innerText == "")
+        console.log(document.getElementById("ip").innerHTML);
+        if (document.getElementById("ip").innerHTML == "")
                 document.getElementById("ublock").innerText = "Are you using UBlock? Naughty naughty";
 }
 function osbrowserfunction () {
@@ -47,7 +47,7 @@ function osbrowserfunction () {
         else if (ua.includes('Safari')){
                 finalBrowser="Safari";
         }
-        document.getElementById("os").innerText = "You are running " + finalBrowser + " on " + finalOs;
+        document.getElementById("os").innerHTML = "You are running " + finalBrowser + " on " + finalOs;
 }
 osbrowserfunction();
 let x = localStorage.getItem("visited");
