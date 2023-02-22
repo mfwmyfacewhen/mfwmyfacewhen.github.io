@@ -4,7 +4,7 @@ function getIP(json) {
 function ublock() {
         console.log(document.getElementById("ip").innerHTML);
         if (document.getElementById("ip").innerHTML == "")
-                document.getElementById("ublock").innerText = "Are you using UBlock? Naughty naughty";
+                document.getElementById("ublock").innerHTML = "Are you using UBlock? Naughty naughty";
 }
 function osbrowserfunction () {
         let ua = navigator.userAgent;
