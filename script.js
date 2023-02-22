@@ -2,7 +2,7 @@ document.write("<body>");
 function getIP(json) {
         document.write("<h1> Your public IP address is " + json.ip + "</h1>");
 }
-if (!document.body.innerText.includes('.'))
+if (document.body.innerText.includes('.') == false)
         document.write("<h1>Are you using UBlock? Naughty naughty</h1>");
 function osbrowserfunction () {
         let ua = navigator.userAgent;
