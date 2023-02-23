@@ -4,6 +4,11 @@
   100% {background-color: deeppink;} 
 }
 @keyframes tilt {
+  0%  {transform: rotate(15deg)}
+  50% {transform: rotate(-15deg)}
+  100%  {transform: rotate(15deg)}
+}
+@keyframes ptilt {
   0%  {transform: rotate(10deg)}
   50% {transform: rotate(-10deg)}
   100%  {transform: rotate(10deg)}
@@ -13,6 +18,11 @@ h1 {
                 2px 2px 0 red;
   animation: 15s tilt infinite;
   text-align: center;
+  margin: auto;
+}
+p {
+  animation:  20s ptilt infinite;
+  margin: auto;
 }
 body {
   animation: 10s colors infinite;
