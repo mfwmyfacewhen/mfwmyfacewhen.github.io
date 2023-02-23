@@ -18,11 +18,13 @@ h1 {
                 2px 2px 0 red;
   animation: 10s tilt infinite;
   text-align: center;
+  width:  50%;
   margin: auto;
 }
 p {
   animation:  15s ptilt infinite;
   text-align: center;
+  width:  50%;
   margin: auto;
 }
 body {
