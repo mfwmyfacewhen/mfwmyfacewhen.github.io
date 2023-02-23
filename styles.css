@@ -20,12 +20,14 @@ h1 {
   text-align: center;
   width:  50%;
   margin: auto;
+  padding:  70px 0;
 }
 p {
   animation:  15s ptilt infinite;
   text-align: center;
   width:  50%;
   margin: auto;
+  padding:  70px 0;
 }
 body {
   animation: 10s colors infinite;
