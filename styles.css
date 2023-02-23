@@ -4,9 +4,9 @@
   100% {background-color: deeppink;} 
 }
 @keyframes tilt {
-  0%  {transform: rotate(30deg)}
-  50% {transform: rotate(-30deg)}
-  100%  {transform: rotate(30deg)}
+  0%  {transform: rotate(10deg)}
+  50% {transform: rotate(-10deg)}
+  100%  {transform: rotate(10deg)}
 }
 h1 {
   text-shadow:  1px 1px 0 red, 
