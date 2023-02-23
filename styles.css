@@ -16,12 +16,12 @@
 h1 {
   text-shadow:  1px 1px 0 red, 
                 2px 2px 0 red;
-  animation: 15s tilt infinite;
+  animation: 10s tilt infinite;
   text-align: center;
   margin: auto;
 }
 p {
-  animation:  20s ptilt infinite;
+  animation:  15s ptilt infinite;
   margin: auto;
 }
 body {
