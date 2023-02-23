@@ -5,13 +5,15 @@
 }
 @keyframes tilt {
   0%  {transform: rotate(30deg)}
-  100% {transform: rotate(-30deg)}
+  50% {transform: rotate(-30deg)}
+  100%  {transform: rotate(30deg)}
 }
 h1 {
   text-shadow:  1px 1px 0 red, 
                 2px 2px 0 red;
-  animation: 15s tilt infinite
+  animation: 15s tilt infinite;
+  text-align: center;
 }
 body {
-  animation: 10s colors infinite
+  animation: 10s colors infinite;
 }
