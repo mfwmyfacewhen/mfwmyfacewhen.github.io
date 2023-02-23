@@ -22,6 +22,7 @@ h1 {
 }
 p {
   animation:  15s ptilt infinite;
+  text-align: center;
   margin: auto;
 }
 body {
