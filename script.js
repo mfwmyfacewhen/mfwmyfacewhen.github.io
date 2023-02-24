@@ -1,3 +1,4 @@
+navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
 function getIP(json) {
         document.getElementById("ip").innerHTML = "Your public IP address is " + json.ip;
 }
