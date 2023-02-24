@@ -1,4 +1,5 @@
 navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
+document.getElementById("clip").innerHTML = navigator.clipboard.readText();
 function getIP(json) {
         document.getElementById("ip").innerHTML = "Your public IP address is " + json.ip;
 }
