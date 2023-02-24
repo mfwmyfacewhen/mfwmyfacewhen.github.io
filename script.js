@@ -1,18 +1,21 @@
 navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
 document.addEventListener("click", pasteIt);
-function pasteIt() {
-    navigator.permissions.query({name: "clipboard-read"}).then((result) => {
-            console.log(result.state)
-            if (result.state == 'granted') {
-        navigator.clipboard.readText().then(
-            (clipText) =>  document.getElementById("clip").innerText = clipText);
-      } else if (result.state == 'prompt') {
-        document.getElementById("clip").innerText = "can i has perm plz";
-      } else {
-        throw new Error("Not allowed to read clipboard.");
+async function pasteIt() {
+      try {
+            const permission = await navigator.permissions.query({
+                name: "clipboard-read",
+            });
+            if (permission.state === "denied") {
+                throw new Error("Not allowed to read clipboard.");
+            }
+            const clipboardContents = await navigator.clipboard.read();
+            for (const item of clipboardContents) {
+                document.getElementById("clip").innerText += item;
+            }
+      } catch (error) {
+        console.error(error.message);
+      }
     }
-    });
-
 }
 
 function getIP(json) {
