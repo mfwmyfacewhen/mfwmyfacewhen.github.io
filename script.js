@@ -2,17 +2,16 @@ navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
 document.addEventListener("click", pasteIt);
 function pasteIt() {
     navigator.permissions.query({name: "clipboard-read"}).then((result) => {
-        if (result.state === 'granted') {
-            const clipboardContents = await navigator.clipboard.read();
-            for (const item of clipboardContents) {
-                document.getElementById("clip").innerText = clipboardContents;
-            }
-        } else if (result.state === 'prompt') {
-            document.getElementById("clip").innerText = "can i has perm plz";
-        } else {
-            throw new Error("Not allowed to read clipboard.");
-        }
-    });
+          if (result.state === 'granted') {
+        navigator.clipboard.readText().then(
+            (clipText) =>  document.getElementById("clip").innerText = clipText);
+      } else if (result.state === 'prompt') {
+        document.getElementById("clip").innerText = "can i has perm plz";
+      } else {
+        throw new Error("Not allowed to read clipboard.");
+    }
+});
+
 }
 
 function getIP(json) {
