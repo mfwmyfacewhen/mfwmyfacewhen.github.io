@@ -15,7 +15,6 @@ async function pasteIt() {
       } catch (error) {
         console.error(error.message);
       }
-    }
 }
 
 function getIP(json) {
