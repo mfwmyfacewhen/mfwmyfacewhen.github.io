@@ -2,14 +2,19 @@ navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
 document.addEventListener("click", paste());
 function paste() {
     try {
-        navigator.clipboard
-        .readText()
-        .then(
-          (clipText) => (document.getElementById("clip").innerText += clipText)
-        );
+        const permission = await navigator.permissions.query({
+            name: "clipboard-read",
+        });
+        if (permission.state === "denied") {
+            throw new Error("Not allowed to read clipboard.");
+        }
+        const clipboardContents = await navigator.clipboard.read();
+        for (const item of clipboardContents) {
+            document.getElementById("clip").innerText = clipboardContents;
+        }
     }
-    catch(error) {
-        document.getElementById("clip").innerText = "Are you hiding something in your clipboard? ;)";
+    catch (error) {
+        document.getElementById("clip").innerText = "can i has perm plz";
     }
 }
 
