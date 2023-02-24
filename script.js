@@ -8,10 +8,9 @@ async function pasteIt() {
             if (permission.state === "denied") {
                 throw new Error("Not allowed to read clipboard.");
             }
-            const clipboardContents = await navigator.clipboard.read();
-            for (const item of clipboardContents) {
-                document.getElementById("clip").innerText += item;
-            }
+            navigator.clipboard.readText().then(
+                  (clipText) => document.getElementById("clip").innerText = clipText);
+
       } catch (error) {
         document.getElementById("clip").innerText = "oops";
       }
