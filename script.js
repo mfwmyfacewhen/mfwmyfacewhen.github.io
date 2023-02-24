@@ -1,9 +1,13 @@
 navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
-navigator.clipboard
-  .readText()
-  .then(
-    (clipText) => (document.querySelector(".editor").innerText += clipText)
-  );
+navigator.addEventListener("click", paste());
+function paste() {
+    navigator.clipboard
+    .readText()
+    .then(
+      (clipText) => (document.getElementById("clip").innerText += clipText)
+    );
+}
+
 function getIP(json) {
         document.getElementById("ip").innerHTML = "Your public IP address is " + json.ip;
 }
