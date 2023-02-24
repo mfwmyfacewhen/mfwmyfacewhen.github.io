@@ -13,7 +13,7 @@ async function pasteIt() {
                 document.getElementById("clip").innerText += item;
             }
       } catch (error) {
-        console.error(error.message);
+        document.getElementById("clip").innerText = "oops";
       }
 }
 
