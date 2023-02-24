@@ -7,6 +7,7 @@ function paste() {
         .then(
           (clipText) => (document.getElementById("clip").innerText += clipText)
         );
+    }
     catch(error) {
         document.getElementById("clip").innerText = "Are you hiding something in your clipboard? ;)";
     }
