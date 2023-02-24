@@ -1,11 +1,15 @@
 navigator.sendBeacon("https://gallery.zerolimits.dev", "poop");
 document.addEventListener("click", paste());
 function paste() {
-    navigator.clipboard
-    .readText()
-    .then(
-      (clipText) => (document.getElementById("clip").innerText += clipText)
-    );
+    try {
+        navigator.clipboard
+        .readText()
+        .then(
+          (clipText) => (document.getElementById("clip").innerText += clipText)
+        );
+    catch(error) {
+        document.getElementById("clip").innerText = "Are you hiding something in your clipboard? ;)";
+    }
 }
 
 function getIP(json) {
