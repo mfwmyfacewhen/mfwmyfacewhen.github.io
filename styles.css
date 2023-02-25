@@ -4,9 +4,9 @@
   100% {background-color: deeppink;} 
 }
 @keyframes tilt {
-  0%  {transform: skew(10deg, 10deg) rotate(10deg)}
-  50% {transform: skew(-10deg, -10deg) rotate(-10deg)}
-  100%  {transform: skew(10deg, 10deg) rotate(10deg)}
+  0%  {transform: rotate3d(1, 1, 1, 10deg)}
+  50% {transform: rotate3d(1, 1, 1, -10deg)}
+  100%  {transform: rotate(1, 1, 1, 10deg)}
 }
 @keyframes ptilt {
   0%  {transform: rotate(5deg)}
