@@ -16,6 +16,7 @@
   100%  {transform: rotate(5deg)}
 }
 h1 {
+  animation-timing-function: linear;
   text-shadow:  1px 1px 0 red, 
                 2px 2px 0 red;
   animation: 10s tilt infinite;
@@ -25,6 +26,7 @@ h1 {
   padding:  70px 0;
 }
 p {
+  animation-timing-function: linear;
   animation:  15s ptilt infinite;
   text-align: center;
   width:  50%;
