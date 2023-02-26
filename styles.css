@@ -4,11 +4,11 @@
   100% {background-color: deeppink;} 
 }
 @keyframes tilt {
-  0%  {transform: rotate(10)}
+  0%  {transform: rotate(10deg)}
   /*25% {transform: rotate}*/
-  50% {transform: rotate(-10) }
+  50% {transform: rotate(-10deg) }
   /*75% {transform: rotateX(-20deg)}*/
-  100%  {transform: rotate(10)}
+  100%  {transform: rotate(10deg)}
 }
 @keyframes ptilt {
   0%  {transform: rotate(5deg)}
