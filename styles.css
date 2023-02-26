@@ -6,7 +6,7 @@
 @keyframes tilt {
   0%  {transform: rotate3d(1, 1, 1, 10deg)}
   50% {transform: rotate3d(1, 1, 1, -10deg)}
-  100%  {transform: rotate(1, 1, 1, 10deg)}
+  100%  {transform: rotate(1, 1, 1, 20deg)}
 }
 @keyframes ptilt {
   0%  {transform: rotate(5deg)}
