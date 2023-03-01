@@ -26,11 +26,11 @@
   100% {background-color: deeppink;} 
 }
 @keyframes tilt {
-  0%  {transform: rotate3d(1, 1, 1, 10)}
-  25% {transform: rotate3d(0, -1, 0, 10)}
-  50% {transform: rotate3d(1, -1, 1, -10)}
-  75% {transform: rotate3d(0, 1, 0, 10)}
-  100%  {transform: rotate3d(1, 1, 1, 10)}
+  0%  {transform: rotate3d(1, 1, 1, 10deg)}
+  25% {transform: rotate3d(0, -1, 0, 10deg)}
+  50% {transform: rotate3d(1, -1, 1, -10deg)}
+  75% {transform: rotate3d(0, 1, 0, 10deg)}
+  100%  {transform: rotate3d(1, 1, 1, 10deg)}
 }
 @keyframes ptilt {
   0%  {transform: rotate(5deg)}
