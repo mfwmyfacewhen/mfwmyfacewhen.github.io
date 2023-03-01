@@ -20,10 +20,6 @@
     }
 }
 
-h1 {
-    animation: 5s hotlineMiami infinite;
-}
-
 @keyframes colors { 
   0%   {background-color: deeppink;}
   50%  {background-color: cyan;}
@@ -41,7 +37,7 @@ h1 {
   50% {transform: rotate(-5deg)}
   100%  {transform: rotate(5deg)}
 }
-/*h1 {
+h1 {
   text-shadow:  1px 1px 0 red, 
                 2px 2px 0 red;
   animation: 10s tilt infinite;
@@ -50,7 +46,7 @@ h1 {
   width:  50%;
   margin: auto;
   padding:  70px 0;
-}*/
+}
 p {
   animation:  15s ptilt infinite;
   animation-timing-function: linear;
